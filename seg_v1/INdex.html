@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      id="controls"
+      class="flex item-center justify-center flex-col gap-2 m-2"
+    >
+      <button
+        class="border border-2 p-2 rounded-xl text-lg font-bold"
+        onclick="addrandompoint()"
+      >
+        add new point
+      </button>
+      <button
+        class="border border-2 p-2 rounded-xl text-lg font-bold"
+        onclick="addrandomsegmetn()"
+      >
+        add new segment
+      </button>
+      <button
+        class="border border-2 p-2 rounded-xl text-lg font-bold"
+        onclick="removerandomsegmetn()"
+      >
+        remove segments
+      </button>
+      <button
+        class="border border-2 p-2 rounded-xl text-lg font-bold"
+        onclick="removerandompoints()"
+      >
+        remove points
+      </button>
+      <button
+        class="border border-2 p-2 rounded-xl text-lg font-bold"
+        onclick="clearall()"
+      >
+        clear all
+      </button>
+    </div>
+    <canvas id="canvas" class="m-2"></canvas>
+    <script src="script.js"></script>
+  </body>
+</html>
